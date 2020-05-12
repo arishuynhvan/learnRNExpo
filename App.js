@@ -8,9 +8,15 @@ export default function App() {
         <TextInput placeholder="Write your goal here" style={styles.input} />
         <Button title="ADD" />
       </View>
-      <View>
-        <View style={[styles.flexbox, { backgroundColor: "red" }]}>
+      <View style = {{ flexDirection:'column', justifyContent:'center', alignItems:'center' }}>
+        <View style={[styles.flexbox, { backgroundColor: "red", flex:1 }]}>
           <Text style={{ color: "white" }}>1</Text>
+        </View>
+        <View style={[styles.flexbox, { backgroundColor: "blue", flex: 2 }]}>
+          <Text style={{ color: "white" }}>1</Text>
+        </View>
+        <View style={[styles.flexbox, { backgroundColor: "yellow", flex:3 }]}>
+          <Text style={{ color: "black" }}>1</Text>
         </View>
       </View>
     </View>
@@ -33,8 +39,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   flexbox: {
-    width: "100%",
-    height: 50,
+    width:"100%",
     justifyContent: "center",
     alignItems: "center",
   },
