@@ -33,3 +33,7 @@ For reverse directions, both main and cross axes are reverse
 
 - flex: 1 -> take as much space as it can get 
 - flex numbers of the siblings of the same parents are relative to each other. They can help 
+
+## Touchable Components
+
+- A family of RN-exclusive components for handling the touch event at high level (no longer onTouchStart... onTouchEnd)

@@ -45,7 +45,9 @@ TODO: Read up how map can magically render a React Component for each item in it
 
 ### Exercise 1
 
-TODO: Update the input text to display placeholder text after every press on ```ADD``` button ✅
+TODO: Update the input text to display placeholder text after every press on ```ADD``` button ☑
+
+TODO: Do that without using ```useState("")``` or directly modifying the ```value``` property of ```<TextInput>``` 
 
 ## FlatList
 
@@ -74,3 +76,4 @@ e.g.
 <GoalInput onAddGoal={}>
 ```
 Can access whatever passed in by calling ```props.onAddGoal``` inside the component
+

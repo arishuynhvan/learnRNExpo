@@ -14,15 +14,23 @@ import GoalInput from "./components/GoalInput";
 export default function App() {
   const [goalList, setGoalList] = useState([]);
   const addGoalHandler = (goal) => {
-    setGoalList((goalList) => [...goalList, {abc:Math.random().toString(), value:goal}]);
+    setGoalList((goalList) => [
+      ...goalList,
+      { uid: Math.random().toString(), value: goal },
+    ]);
   };
   return (
     <View style={styles.screen}>
-      <GoalInput onAddGoal = {addGoalHandler}/>
+      <GoalInput onAddGoal={addGoalHandler} />
       <FlatList
-        keyExtractor={(item, index) => item.abc}
+        keyExtractor={(item, index) => item.uid}
         data={goalList}
-        renderItem={(itemData) => <GoalItem title={itemData.item.value} />}
+        renderItem={(itemData) => (
+          <GoalItem
+            title={itemData.item.value}
+            onDelete={() => console.log("lol")}
+          />
+        )}
       ></FlatList>
     </View>
   );
