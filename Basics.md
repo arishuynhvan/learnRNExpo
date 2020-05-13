@@ -6,6 +6,10 @@ By default, it only takes as much space as its child requires
 
 ## Flexbox
 
+The UI component inspired by CSS flexbox, can be created and controlled by <View></View>.
+
+The component for creative design and layout.
+
 ### Axes
 
 For any (flex) direction, there are 2 pairs of axes: main and cross axes

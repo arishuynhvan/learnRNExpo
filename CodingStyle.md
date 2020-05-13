@@ -23,3 +23,8 @@ Styles are set up directly inside the components -> bad :(
 ## Formatting style
 - Prettier (now)
 - Babel
+
+## Latest features of React
+
+- Must use the stable ones: [Hook](https://www.youtube.com/watch?v=dpw9EHDh2bM) => useState, useContext, useEffect
+- Adhere to their rules, e.g [Hook rule](https://reactjs.org/docs/hooks-rules.html)
