@@ -65,4 +65,12 @@ TODO: Prevent the user from adding an empty goal!
 
 ### Exercise 3
 
-TODO: Split the ```<View>``` for goal input into a separate file without breaking the code!
+TODO: Split the ```<View>``` for goal input into a separate file without breaking the code! ☑ (half done myself)
+
+When creating new components, create new properties to pass data and methods
+
+e.g.
+```JS
+<GoalInput onAddGoal={}>
+```
+Can access whatever passed in by calling ```props.onAddGoal``` inside the component
