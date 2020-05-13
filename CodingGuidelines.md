@@ -42,7 +42,10 @@ Styles are set up directly inside the components -> bad :(
 
 ## Git commits
 
-Start with an infinitive verb. Imagine you answer "Why should I add this commit?" 
+Start with an infinitive verb. 
+
+Imagine answering "Why should I add this commit?"
+ 
 -> "To..." + <your_commit_message>, e.g. ```Fix bug #1```
 
 ## Warnings

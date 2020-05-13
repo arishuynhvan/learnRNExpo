@@ -19,7 +19,9 @@
 The state of these components is completely independent. Hooks are a way to reuse stateful logic, not state itself.
 ```
 
-Stateful logic is any code that uses state. In the case of hook, it's the behavior created with one or more hooks.
+Stateful logic is any code that uses state. In the case of hook, it's the behavior created with one or more hooks. (StackOverflow)
+
+[A powerful quick overview on Hooks](https://academind.com/learn/react/react-hooks-introduction/)
 
 # Javascript
 
@@ -76,4 +78,3 @@ e.g.
 <GoalInput onAddGoal={}>
 ```
 Can access whatever passed in by calling ```props.onAddGoal``` inside the component
-
