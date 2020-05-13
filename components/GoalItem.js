@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableHighlight } from "react-native";
 
 const GoalItem = (props) => {
   return (
-    <TouchableHighlight underlayColor={"yellow"} onPress={props.onDelete}>
+    <TouchableHighlight underlayColor={"yellow"} onPress={props.onDelete.bind(this, props.id)}>
       <View style={styles.goalListItem}>
         <Text>{props.title}</Text>
       </View>

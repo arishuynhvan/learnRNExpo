@@ -28,8 +28,9 @@ export default function App() {
         data={goalList}
         renderItem={(itemData) => (
           <GoalItem
+            id = {itemData.item.uid}
             title={itemData.item.value}
-            onDelete={removeGoalHandler.bind(this,itemData.item.uid)}
+            onDelete={removeGoalHandler}
           />
         )}
       ></FlatList>

@@ -38,6 +38,7 @@ Styles are set up directly inside the components -> bad :(
 - Each word in the name of a component file should start with a capital letter (SentenceCase instead of camelCase)
 - 1 file/ component
 - Split meaningfully, when the component is between half and 1 full screen (readable font size)
+- Move all the logic to the components as much as possible. If there is a need to bind a function with a property in a child component, don't do the binding in ```App.js``` level, but pass the data down via ```props```.
 
 ## Git commits
 
