@@ -43,6 +43,18 @@ goalList => [...goalList, enteredGoal]
 
 TODO: Read up how map can magically render a React Component for each item in its list
 
-## Exercise 1
+### Exercise 1
 
-TODO: figure how to update the input text to display placeholder text after every press on ```ADD``` button ✅
+TODO: Update the input text to display placeholder text after every press on ```ADD``` button ✅
+
+## FlatList
+
+### renderItem
+
+TODO: explain this in my own word
+
+By default, it should take an object with defined ```key``` or ```id```, but if you want it to extract some key other than those keywords above, you'll need to implement ```keyExtractor```
+
+### Exercise 2
+
+TODO: Prevent the user from adding an empty goal!
