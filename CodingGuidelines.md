@@ -33,6 +33,13 @@ Styles are set up directly inside the components -> bad :(
 
 - All should be declared as a ```const``` variable and use functional programming JFX syntax (TODO: add an explanation for this!)
 
+## Git commits
+
+Start with an infinitive verb. Imagine you answer "Why should I add this commit?" 
+-> "To..." + <your_commit_message>, e.g. ```Fix bug #1```
+
+
 ## Warnings
 
 Treat them as errors & fix before push!
+
