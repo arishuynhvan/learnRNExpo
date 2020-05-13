@@ -49,6 +49,8 @@ TODO: Update the input text to display placeholder text after every press on ```
 
 ## FlatList
 
+FlatList doesn't scroll the entire screen. It has a scroll view within itself.
+
 ### renderItem
 
 TODO: explain this in my own word
