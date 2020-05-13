@@ -1,6 +1,6 @@
 # Style prop of Components
 
-## Camel case
+## Camel case ✅
 
 e.g. borderColor
 
@@ -33,11 +33,16 @@ Styles are set up directly inside the components -> bad :(
 
 - All should be declared as a ```const``` variable and use functional programming JFX syntax (TODO: add an explanation for this!)
 
+## Splitting components
+
+- Each word in the name of a component file should start with a capital letter (SentenceCase instead of camelCase)
+- 1 file/ component
+- Split meaningfully, when the component is between half and 1 full screen (readable font size)
+
 ## Git commits
 
 Start with an infinitive verb. Imagine you answer "Why should I add this commit?" 
 -> "To..." + <your_commit_message>, e.g. ```Fix bug #1```
-
 
 ## Warnings
 

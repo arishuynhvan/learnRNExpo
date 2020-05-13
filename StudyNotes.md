@@ -60,3 +60,9 @@ By default, it should take an object with defined ```key``` or ```id```, but if 
 ### Exercise 2
 
 TODO: Prevent the user from adding an empty goal!
+
+## Splitting Components
+
+### Exercise 3
+
+TODO: Split the ```<View>``` for goal input into a separate file without breaking the code!
