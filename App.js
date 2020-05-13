@@ -8,8 +8,9 @@ export default function App() {
   const goalInputHandler = (enteredText) => {
     setEnteredGoal(enteredText);
   };
-  const addGoalButton = ()=>{
+  const addGoalHandler = ()=>{
     setGoalList(goalList => [...goalList, enteredGoal]);
+    setEnteredGoal('');
   };
 
   return (
@@ -21,7 +22,7 @@ export default function App() {
           onChangeText={goalInputHandler}
           value = {enteredGoal}
         />
-        <Button title="ADD" onPress={addGoalButton}/>
+        <Button title="ADD" onPress={addGoalHandler}/>
       </View>
       <View>
         {goalList.map((goal) => <Text>{goal}</Text>)}

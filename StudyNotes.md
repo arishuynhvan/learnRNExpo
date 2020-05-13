@@ -45,4 +45,4 @@ TODO: Read up how map can magically render a React Component for each item in it
 
 ## Exercise 1
 
-TODO: figure how to update the input text to display placeholder text after every press on ```ADD``` button
+TODO: figure how to update the input text to display placeholder text after every press on ```ADD``` button ✅
