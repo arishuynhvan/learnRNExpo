@@ -9,7 +9,7 @@
 
 ### Run in web browser
 
-- Interacting with the React Native app in web browser can only be debugged using the developer tools on the browser and not in the terminal itself.
+- Interacting with the React Native app in a web browser can only be debugged using the developer tools of the browser and **NOT** in a terminal.
 
 # React
 
