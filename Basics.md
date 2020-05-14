@@ -31,7 +31,7 @@ For reverse directions, both main and cross axes are reverse
 
 ### Flex
 
-- flex: 1 -> take as much space as it can get 
+- flex: 1 -> take as much space as it can get from the **parent**. If it's an only child, it'll take all the space of the parent in both vertical and horizontal direction, unless specified otherwise.
 - flex numbers of the siblings of the same parents are relative to each other. They can help 
 
 ## Touchable Components
