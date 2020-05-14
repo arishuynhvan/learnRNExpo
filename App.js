@@ -18,6 +18,9 @@ export default function App() {
       return goalList.filter((goal) => goal.uid !== goalID);
     });
   };
+  const cancelAddModeHandler = () =>{
+    setIsAddMode(false);
+  };
   return (
     <View style={styles.screen}>
       <Button
@@ -25,7 +28,7 @@ export default function App() {
         onPress={() => setIsAddMode(true)}
         style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
       />
-      <GoalInput visible={isAddMode} onAddGoal={addGoalHandler} />
+      <GoalInput visible={isAddMode} onAddGoal={addGoalHandler} cancelAddMode = {cancelAddModeHandler}/>
       <FlatList
         keyExtractor={(item, index) => item.uid}
         data={goalList}
