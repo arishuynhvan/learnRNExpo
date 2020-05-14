@@ -24,8 +24,8 @@ const GoalInput = (props) => {
         <View
           style={{
             flexDirection: "row",
-            width: "80%",
-            justifyContent: "center",
+            width: "60%",
+            justifyContent: "space-between"
           }}
         >
           <View style={styles.button}>
@@ -53,8 +53,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   button: {
-    width: "50%",
-    margin: 5,
+    width:"40%"
   },
 });
 export default GoalInput;
