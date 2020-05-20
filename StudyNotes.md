@@ -21,7 +21,9 @@ The state of these components is completely independent. Hooks are a way to reus
 
 Stateful logic is any code that uses state. In the case of hook, it's the behavior created with one or more hooks. (StackOverflow)
 
-[A powerful quick overview on Hooks](https://academind.com/learn/react/react-hooks-introduction/)
+[A powerful quick overview on Hooks with detailed use cases](https://academind.com/learn/react/react-hooks-introduction/)
+
+TODO: Watch the video at the beginning of the above article to see how HTTP requests update Hooks
 
 # Javascript
 
@@ -78,3 +80,31 @@ e.g.
 <GoalInput onAddGoal={}>
 ```
 Can access whatever passed in by calling ```props.onAddGoal``` inside the component
+
+## Debugging
+
+Common front-end error types
+![Error types](images/UIerrorTypes.png)
+
+### Tools
+- Error messages -> google/stackoverflow
+- console.log()
+- **Chrome Debugger** (+Breakpoints) triggered by emulator debugger (iOS, Cmd+D; Android, Ctrl+M => debug JS remotely => Ctrl + Shit + I to start Chrome developer tools) => Sources tab => debuggerWorker.js => add breakpoint in the exact js file inside Chrome!
+
+More on [Chrome devtools](https://developers.google.com/web/tools/chrome-devtools/) 
+
+More on [Expo debugging](https://docs.expo.io/workflow/debugging/)
+
+- **Reload Android emulator**: rr (press r twice); iOS: Cmd+R/Ctrl+R
+
+- **Disable Live Reload** while making too many changes to the code at once without wishing to see the red message
+
+- **Enable Hot Reloading** tries to reload only part of the screen affected by the new changes saved without reloading the entire app (live reload) -> still buggy so not enabled by default
+  
+- **Toggle Inspector**
+
+- **Performance Monitor** enable an overlay with information about the performance in development mode. This is not the final perfomance testing for production mode and should NOT be!
+
+- **Toggle inspector** => UI overlay to inspect elements for their dimensions, colors and so on, but it's better to use the [**React Native Debugger**](https://github.com/jhen0409/react-native-debugger) (download the standalone versions from release tab)
+
+- **React Native Debugger** -> take note of the profiler for optimization by removing redundant/ unnecessary render cycles before publishing app    
