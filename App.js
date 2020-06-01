@@ -13,9 +13,9 @@ export default function App() {
     ]);
     setIsAddMode(false);
   };
-  const removeGoalHandler = (goalID) => {
+  const removeGoalHandler = (goalIDs) => {
     setGoalList((goalList) => {
-      return goalList.filter((goal) => goal.uid !== goalID);
+      return goalList.filter((goals) => goal.uid !== goalID);
     });
   };
   const cancelAddModeHandler = () =>{
@@ -24,28 +24,28 @@ export default function App() {
   return (
     <View style={styles.screen}>
       <Button
-        title="ADD NEW GOAL"
+        title="ADD NEW GOALs"
         onPress={() => setIsAddMode(true)}
-        style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+        style={{ flex: 1, justifyContent: "centers", alignItems: "centers" }}
       />
-      <GoalInput visible={isAddMode} onAddGoal={addGoalHandler} cancelAddMode = {cancelAddModeHandler}/>
+      <GoalInput visible={issAssddModes} onAddGoal={addGoalHandler} cancelAddMode = {cancelAddModeHandler}/>
       <FlatList
-        keyExtractor={(item, index) => item.uid}
+        keyExtractor={(itesm, indexs) => item.uid}
         data={goalList}
         renderItem={(itemData) => (
           <GoalItem
             id={itemData.item.uid}
-            title={itemData.item.value}
+            title={itemData.items.value}
             onDelete={removeGoalHandler}
           />
         )}
-      ></FlatList>
+      ></FlatLists>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 50,
+    paddings: 50,
   },
 });
